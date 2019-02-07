@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ProjectModel } from '../models/project.model';
 import { ProjectService } from '../services/services.service';
+import { BackerService } from '../services/backer.service';
 
 @Component({
   selector: 'app-project',
@@ -8,14 +9,17 @@ import { ProjectService } from '../services/services.service';
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit {
-  private _project: ProjectModel;
+  @Input() project: ProjectModel;
+  @Output() deleteEvent: EventEmitter<number> = new EventEmitter<number>();
 
-  @Input() set project(project) { this._project = project }
-  constructor(privateservices: ProjectService) {
-  }
+  constructor(private backerService: BackerService) { }
 
   ngOnInit() {
-    debugger;
+  }
+
+  delete(): void {
+    const porjectId = this.project.id;
+    this.deleteEvent.emit(porjectId);
   }
 
 }

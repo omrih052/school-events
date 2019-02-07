@@ -19,5 +19,11 @@ export class ProjectListComponent implements OnInit {
     console.log('ProjectListComponent ngOnInit')
     this.projects = this.projectService.get();
   }
+  deletechild(id: number) {
+
+    this.projectService.delete(id);
+    console.log("mnjbjmjbjbjhvbj");
+  }
+
 
 }

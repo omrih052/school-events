@@ -4,4 +4,5 @@ export interface ProjectModel {
     desc: string;
     goal: number;
     balance: number;
+    dateEnd: Date;
 }
