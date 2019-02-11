@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectComponent } from '../project/project.component';
+import { ProjectService } from '../services/services.service';
 
 @Component({
   selector: 'app-right-side',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./right-side.component.css']
 })
 export class RightSideComponent implements OnInit {
+  [x: string]: any;
 
   constructor() { }
 
   ngOnInit() {
+
+
   }
 
 }
+
+
+

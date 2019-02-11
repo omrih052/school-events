@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+/* placeholders */
+header {
+    height: 280px;
+    background-color: #777;
+}
+main {
+    width: 70%;
+    float: left;
+}
+aside {
+    background-color: #777;
+    width: 30%;
+    float: left;
+    min-height: 500px;
+}
+
+.navbar-nav > li {
+    font-size: 2rem;
+} 

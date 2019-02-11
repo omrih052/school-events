@@ -15,6 +15,7 @@ export class ProjectComponent implements OnInit {
   constructor(private backerService: BackerService) { }
 
   ngOnInit() {
+
   }
 
   delete(): void {

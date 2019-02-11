@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ProjectModel } from '../models/project.model';
 import { ProjectService } from '../services/services.service';
 
@@ -22,8 +22,9 @@ export class ProjectListComponent implements OnInit {
   deletechild(id: number) {
 
     this.projectService.delete(id);
-    console.log("mnjbjmjbjbjhvbj");
+   
   }
 
 
 }
+
