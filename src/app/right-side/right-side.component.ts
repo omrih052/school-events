@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectComponent } from '../project/project.component';
-import { ProjectService } from '../services/services.service';
+
+
 
 @Component({
   selector: 'app-right-side',
@@ -16,8 +16,12 @@ export class RightSideComponent implements OnInit {
 
 
   }
+  addProjact() {
+    console.log("khjgjhfhgdfgs");
 
+  }
 }
+
 
 
 

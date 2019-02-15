@@ -1,11 +1,9 @@
-<div class="container">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">{{ project.name }}</h5>
-      <p class="card-text">{{ project.desc}}</p>
-      <p class="card-text">{{ project.balance }} / {{ project.goal }}</p>
-      <p class="card-text">{{ project.dateEnd }}</p>
-    </div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ project.name }}</h5>
+    <p class="card-text">{{ project.desc}}</p>
+    <p class="card-text">{{ project.balance }} / {{ project.goal }}</p>
+    <p class="card-text">{{ project.dateEnd |  date:'dd/MM/yy hh:ss' }}</p>
   </div>
   <button class="buttonEvent" (click)='delete()'>Delete event</button>
 </div>

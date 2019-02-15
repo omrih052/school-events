@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Input } from '@angular/core';
 import { ProjectModel } from '../models/project.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -11,7 +11,7 @@ import { UserService } from './user.service';
 export class ProjectService {
     projectList: ProjectModel[];
     constructor(private httpClient: HttpClient, private userService: UserService) {
-
+      
     }
 
     delete(id: number) {

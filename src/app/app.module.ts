@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './site/header/header.component';
-import { RightSideComponent } from './right-side/right-side.component';
+
 import { MainModule } from './main/main.module';
 import { CommonModule } from '@angular/common';
 import { AboutComponent } from './site/about/about.component';
@@ -35,7 +35,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    RightSideComponent,
+ 
     AboutComponent,
     ContactComponent,
     HomeComponent,

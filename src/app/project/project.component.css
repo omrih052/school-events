@@ -2,5 +2,7 @@
     width: 288px;
 }
 .card{
-    width:18rem;
+    float: left;
+    width: 18rem;
+    margin: 5px;
 }
